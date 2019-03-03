@@ -6,29 +6,9 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
 <body>
-
 <div id="app">
-    <div class="container">
-        <div class="row">
-            <div class="col-md 3">
-                <img v-bind:src="image1" alt="" width="400px">
-            </div>
-            <div class="col-md 3">
-                <h1>{{product}}</h1>
-                <!-- IF operatoru  -->
-                <h2 v-if="lubov">Lubov sexy</h2>
-                <h2 v-else>Lubov not sexy</h2>
-                <!-- FOR operatoru -->
-                <h2 v-for="item in datails">{{item}}</h2>
-                <hr>
-                <div v-for="item in variants" style="color: red">
-                    <h3 @mouseover="updateImage(item.imageVariant)">
-                        {{item.variant}}
-                    </h3>
-                </div>
-            </div>
-        </div>
-    </div>
+
+    <product></product>
 </div>
 <script src="js/vue.js"></script>
 <script src="js/main.js"></script>
